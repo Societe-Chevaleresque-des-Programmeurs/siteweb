@@ -10,19 +10,19 @@ sectionPagesMenu = "toutesLesPages"
     [[menu.main]]
     name = '/home'
     weight = 10
-    url = '/'
+    pageRef = '/'
     [[menu.main]]
     name = '/events'
     weight = 20
-    url = '/events'
+    pageRef = '/events'
     [[menu.main]]
     name = '/membres'
-    url = '/ca'
+    pageRef = '/ca'
     weight = 30
     [[menu.main]]
     name = '/infos'
     weight = 40
-    url = '/infos'
+    pageRef = '/infos'
 
     [[menu.shortcuts]]
         name = "<i class='fa-brands fa-discord fa-xl'></i>"
