@@ -1,12 +1,12 @@
 {{ define "main" }}
-    <main class="events">
+    <main class="list">
         {{ range .Pages }}
-        <div class="singleEvent">
-            <img class="imageEvent" src="media/assoLogo.png">
-            <h2 class="titreEvent">{{ .Title }}</h2>
-            <h2 class="date">{{ .Date.Format "01-02-2006" }}</h2>
-            <h3 class="resume">{{ .Summary }}</h3>   
-        </div>
+            <div class="singleList">
+                <img class="imageList" src="media/assoLogo.png">
+                <h2 class="titreList">{{ .Title }}</h2>
+                <h2 class="dateList">{{ .Date.Format "01-02-2006" }}</h2>
+                <h3 class="resumeList">{{ .Summary }}</h3>   
+            </div>
         {{ end }}
     </main>
 {{ end }}
