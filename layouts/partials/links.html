@@ -1,0 +1,5 @@
+<div class="links">
+    {{ range .Site.Menus.shortcuts}}
+        <a title="{{ .Title }}" href="{{ .URL }}">{{safeHTML .Name}}</a>
+    {{end}}
+</div>

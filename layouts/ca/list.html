@@ -1,0 +1,14 @@
+{{ define "main" }}
+    <main class="membresConseil">
+        {{ range sort .Pages ".Weight" }}
+        {{ if or (eq .Params.en_cours "oui") (eq .Params.en_cours "non") }}
+        <div class="membre">            
+            <h2 class="titre">{{ .Params.Titre }}</h2>
+            <h3 class="nom">{{ .Params.Nom }}</h3>
+            <h3 class="info">{{ .Params.Niveau }}</h3>
+            <h4 class="description">{{ .Params.Description }}</h4> <!-- optionnel -->
+        </div>
+        {{ end }}
+        {{ end }}
+    </main>            
+{{ end }}

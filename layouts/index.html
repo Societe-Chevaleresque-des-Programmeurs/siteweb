@@ -1,0 +1,17 @@
+{{ define "main" }}
+<main>
+    <img class="logo" src="media/assoLogo.png">
+    <h2>Bienvenue sur le site de la SCP37</h2>
+    
+    {{ partial "links" . }}
+
+    <div class="nextEvent">
+        <h2 class="section">Prochain évènement</h2>
+        <div class="currentEvent">
+            <img class="imageEvent" src="media/assoLogo.png">
+            <h2 class="titreEvent">Event sympa</h2>
+            <h2 class="date">01/01/2023</h2>
+            <h3 class="resume">un event très très sympa</h3>
+        </div>
+</main>
+{{ end }}

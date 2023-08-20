@@ -1,0 +1,47 @@
+baseURL = 'http://example.org/'
+languageCode = 'fr'
+defaultContentLanguage = 'fr'
+title = 'SCP~37'
+
+sectionPagesMenu = "main"
+[menu]
+    [[menu.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+    url = '/'
+    [[menu.main]]
+    name = 'events'
+    pageRef = '/events'
+    weight = 20
+    url = '/events'
+    [[menu.main]]
+    name = 'ca'
+    pageRef = '/ca'
+    url = '/ca'
+    weight = 30
+    [[menu.main]]
+    name = 'informations'
+    pageRef = '/infos'
+    weight = 40
+    url = '/infos'
+
+    [[menu.shortcuts]]
+        name = "<i class='fa-brands fa-discord fa-xl'></i>"
+        url = ""
+        weight = 1
+        title = "Découvez notre discord!"
+    [[menu.shortcuts]]
+        name = "<i class='fa-brands fa-square-instagram fa-xl'></i>"
+        url = ""
+        weight = 2
+        title = "Suivez-nous sur Instagram!"
+    [[menu.shortcuts]]
+        name = "<img class='helloAssoLogo' src='media/helloAssoLogo.png'>"
+        url = "https://www.helloasso.com/associations/societe-chevaleresque-des-programmeurs-37/adhesions/adhesion-2023-2024"
+        weight = 3
+        title = "Rejoignez l'asso!"
+
+
+[params]
+    disableShortcutsTitle=true

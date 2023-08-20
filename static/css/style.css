@@ -1,0 +1,316 @@
+body {
+    margin: 0;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 7dvh minmax(80dvh, auto) 15dvh;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#FFC85C;
+}
+
+
+
+/***    Style de la barre de navigation    ***/
+
+
+nav {
+    background-color: #053442;
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: auto 20% 20% 20% 20% auto;
+    grid-template-rows: 100%;
+    box-shadow: 0 2px 5px 0 #323031bc;
+    transition: 0.5s ease-out;
+}
+
+nav:hover {
+    transition: 0.5s ease-in;
+    box-shadow: 0 5px 5px 0 #323031bc;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s ease-out;
+    color:#FFC85C;
+    font-size: max(1.1vw, 12px);
+}
+
+nav a:hover {
+    color:#DB3A34;
+    background-color: #052f3bc6;
+    transition: 0.3s ease-in;
+}
+
+/***    Style du contenu principal     ***/
+
+main {
+
+    /* jet black and silver white band 
+
+    background: rgb(50,48,49);
+    background: linear-gradient(90deg, rgba(50,48,49,1) 0%, rgba(237,237,237,1) 30%, rgba(237,237,237,1) 70%, rgba(50,48,49,1) 100%);
+    */
+
+    /* silver white and jet black band 
+
+    background: rgb(237,237,237);
+    background: linear-gradient(90deg, rgba(237,237,237,1) 0%, rgba(50,48,49,1) 30%, rgba(50,48,49,1) 70%, rgba(237,237,237,1) 100%);
+    */
+
+    /* dark steel blue gradient 
+
+    background: rgb(8,76,97);
+    background: linear-gradient(117deg, rgba(8,76,97,1) 0%, rgba(44,44,121,1) 64%, rgba(23,126,137,1) 100%);
+    */
+
+    background: rgb(8,76,97);
+    background: linear-gradient(121deg, rgba(8,76,97,1) 0%, rgba(23,126,137,1) 100%);
+
+    /* light orange white gradient
+
+    background: rgb(237,237,237);
+    background: linear-gradient(117deg, rgba(237,237,237,1) 47%, rgba(255,200,87,1) 64%);
+    */
+
+    overflow-y: auto;
+    text-align: center;
+}
+
+
+.logo {
+    display: block;
+    width: 15vw;
+    margin: 5% auto 0 auto;
+}
+
+.links {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 10% 10% 10%;
+    grid-template-rows: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 15%;
+    text-decoration: none;
+}
+
+.links a {
+    transition: 0.2s ease-out;
+}
+
+.links a:hover {
+    transition: 0.2s ease-in;
+    transform: scale(1.2);
+}
+
+
+.helloAssoLogo {
+    width: 2pc;
+}
+
+.fa-discord {
+    color:#7a78cb;
+}
+
+.fa-square-instagram {
+    color: rgb(194, 194, 194);
+}
+
+.nextEvent {
+    margin-top: 20vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row: 10% 90%;
+}
+
+
+.currentEvent {
+    color: #323031;
+    width: 60vw;
+    height: 50vh;
+    margin: 5vh auto 5vh auto;
+    background-color: #177e89c3;
+    box-shadow: 0 0 10px #084C61be;
+    border-radius: 50px 2px 50px 2px;
+    
+    display: grid;
+    grid-template-columns: 30% 35% 35%;
+    grid-template-rows: 33% 33% 33%;
+
+    transition: 0.2s ease-out;
+}
+
+.currentEvent:hover {
+    transition: 0.2s ease-in;
+    transform: scale(1.01);
+}
+
+.imageEvent {
+    border-radius: 50px 0 10% 2px;
+    grid-row: 1/-1;
+    grid-column: 1;
+    object-fit: contain;
+    width: 100%;
+    height: 50vh;
+    border-right: solid 1px black;
+}
+
+.titreEvent {
+    margin: auto;
+    grid-row: 1;
+    grid-column: 2;
+    width: 100%;
+    height: 50%;
+    font-size: 2.5vw;
+}
+
+.date {
+    grid-row: 1;
+    grid-column: 3;
+    margin: auto;
+    width: 100%;
+    height: 50%;
+    font-size: 2vw;
+    font-style: italic;
+}
+
+.resume {
+    grid-row: 2/-1;
+    grid-column: 2/-1;
+    font-size: 1.5vw;
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+/*** Page des événements ***/
+
+.events {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: 25vh;
+    row-gap: 10vh;
+    padding: 4vh 0 20vh 0;
+}
+
+
+.singleEvent {
+    color: #323031;
+    width: 60vw;
+    height: 30vh;
+    margin: 5vh auto 5vh auto;
+    background-color: #177e89c3;
+    box-shadow: 0 0 10px #084C61be;
+    border-radius: 50px 2px 50px 2px;
+    display: grid;
+    grid-template-columns: 30% 35% 35%;
+    grid-template-rows: 33% 33% 33%;
+    transition: 0.2s ease-out;
+}
+
+.singleEvent:hover {
+    transition: 0.2s ease-in;
+    transform: scale(1.01);
+}
+
+.singleEvent img {
+    height: 100%;
+}
+
+/*** Page du conseil ***/
+
+.membresConseil {
+    display: grid;
+    grid-auto-rows: 15vh;
+    color: #323031;
+    row-gap: 25px;
+    padding: 4vh 0 2vh 0;
+}
+
+.membresConseil:first-child {
+    padding-top: 10px;
+}
+
+.membre {
+    border-radius: 2px;
+    margin: 0 auto 0 auto;
+    width: 60%;
+    background-color: #177e89c3;
+    box-shadow: 0 0 10px #084C61be;
+    border: none;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 50% 50%;
+    transition: 0.2s ease-out;
+    align-items: center;
+}
+
+.membre:hover {
+    transition: 0.2s ease-in;
+    transform: scale(1.01);
+}
+
+.titre {
+    margin: 0;
+    grid-column: 1;
+    grid-row: 1/-1;
+}
+
+.nom {
+    margin: 0;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+}
+
+.info {
+    margin: 0;
+    grid-column: 3;
+    grid-row: 1;
+    align-self: center;
+}
+
+.description {
+    margin: 0;
+    grid-column: 2/-1;
+    grid-row: 2;
+    align-self: center;
+}
+
+/*** Style de la page de présentation ***/
+
+.aboutUsPage {
+    display: grid;
+    padding: 4vh 0 5vh 0;
+}
+
+.aboutUs {
+    box-shadow: 0 0 5px #ededed;
+    padding: 15px 20px 0 20px;
+    color: #323031;
+    margin: auto;
+    border-radius: 50px 2px 50px 2px;
+    background-color: #ededed;
+    width: 60%;
+    height: 100%;
+}
+
+.aboutUs p {
+    text-align: justify;
+}
+
+
+/***    Style du bas de page     ***/
+
+footer {
+    background-color: #03232c;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+footer a {
+    color: #ededed;
+}

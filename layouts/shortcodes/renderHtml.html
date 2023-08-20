@@ -1,0 +1,5 @@
+<div {{ with .Get "class" }} class="{{ . }}"{{ end }}>
+  {{ if strings.ContainsNonSpace .Inner }}
+    {{ .Inner }}
+  {{ end }}
+</div>
