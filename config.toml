@@ -1,28 +1,26 @@
-baseURL = 'http://example.org/'
+baseURL = ''
 languageCode = 'fr'
 defaultContentLanguage = 'fr'
 title = 'SCP~37'
 
-sectionPagesMenu = "main"
+# liste toutes les pages
+sectionPagesMenu = "toutesLesPages"
+
 [menu]
     [[menu.main]]
-    name = 'Home'
-    pageRef = '/'
+    name = '/home'
     weight = 10
     url = '/'
     [[menu.main]]
-    name = 'events'
-    pageRef = '/events'
+    name = '/events'
     weight = 20
     url = '/events'
     [[menu.main]]
-    name = 'ca'
-    pageRef = '/ca'
+    name = '/membres'
     url = '/ca'
     weight = 30
     [[menu.main]]
-    name = 'informations'
-    pageRef = '/infos'
+    name = '/infos'
     weight = 40
     url = '/infos'
 
@@ -43,5 +41,5 @@ sectionPagesMenu = "main"
         title = "Rejoignez l'asso!"
 
 
-[params]
-    disableShortcutsTitle=true
+# [params]
+#     disableShortcutsTitle=true
