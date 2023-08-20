@@ -2,12 +2,11 @@ body {
     margin: 0;
     height: 100%;
     display: grid;
-    grid-template-rows: minmax(35px, 7dvh) minmax(80dvh, auto) 15dvh;
+    grid-template-rows: auto minmax(80dvh, auto) 15dvh;
     min-height: 100%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color:#FFC85C;
 }
-
 
 
 /***    Style de la barre de navigation    ***/
@@ -119,7 +118,7 @@ main {
     color: rgb(194, 194, 194);
 }
 
-.description {
+.presentation {
     display: grid;
     grid-template-columns: auto 50% auto;
     padding-top: 15vh;
@@ -139,7 +138,7 @@ main {
     grid-column: 1;
 }
 
-.desc {
+.pres {
     grid-column: 2;
     background-color: #042d3846;
     height: 30rem;
@@ -243,25 +242,25 @@ main {
 
 .events {
     display: grid;
-    grid-template-columns: 100%;
-    grid-auto-rows: 25vh;
-    row-gap: 10vh;
-    padding: 4vh 0 20vh 0;
+    grid-auto-rows: 35vh;
+    color: #323031;
+    row-gap: 25px;
+    padding: 4vh 0 2vh 0;
 }
 
 
 .singleEvent {
-    color: #323031;
-    width: 60vw;
-    height: 30vh;
-    margin: 5vh auto 5vh auto;
-    background-color: #177e89c3;
+    border-radius: 2px;
+    margin: 0 auto 0 auto;
+    width: 60%;
+    background-color: #042d3846;
     box-shadow: 0 0 10px #084C61be;
-    border-radius: 50px 2px 50px 2px;
+    border: none;
     display: grid;
-    grid-template-columns: 30% 35% 35%;
-    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 50% 50%;
     transition: 0.2s ease-out;
+    align-items: center;
 }
 
 .singleEvent:hover {
@@ -277,10 +276,10 @@ main {
 
 .membresConseil {
     display: grid;
-    grid-auto-rows: 15vh;
-    color: #323031;
-    row-gap: 25px;
-    padding: 4vh 0 2vh 0;
+    grid-template-columns: 100%;
+    grid-auto-rows: 25vh;
+    row-gap: 10vh;
+    padding: 4vh 0 20vh 0;
 }
 
 .membresConseil:first-child {
@@ -288,17 +287,18 @@ main {
 }
 
 .membre {
-    border-radius: 2px;
-    margin: 0 auto 0 auto;
-    width: 60%;
-    background-color: #177e89c3;
+    color: #323031;
+    width: 60vw;
+    height: 25vh;
+    margin: 5vh auto 5vh auto;
+    background-color: #042d3846;
     box-shadow: 0 0 10px #084C61be;
-    border: none;
+    border-radius: 50px 2px 50px 2px;
     display: grid;
-    grid-template-columns: 25% 25% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto auto auto;
     transition: 0.2s ease-out;
-    align-items: center;
+
 }
 
 .membre:hover {
@@ -309,28 +309,34 @@ main {
 .titre {
     margin: 0;
     grid-column: 1;
-    grid-row: 1/-1;
+    grid-row: 1;
+    align-self: center;
+    font-size: larger;
 }
 
 .nom {
     margin: 0;
-    grid-column: 2;
-    grid-row: 1;
+    grid-column: 1;
+    grid-row: 2;
     align-self: center;
 }
 
 .info {
     margin: 0;
-    grid-column: 3;
-    grid-row: 1;
+    grid-column: 1;
+    grid-row: 3;
     align-self: center;
 }
 
 .description {
+    border-left: solid 1px #053442;
     margin: 0;
-    grid-column: 2/-1;
-    grid-row: 2;
-    align-self: center;
+    grid-column: 2;
+    grid-row: 1/-1;
+    text-align: start;
+    padding-left: 10px;
+    padding-top: 10px;
+
 }
 
 /*** Style de la page de présentation ***/
@@ -341,12 +347,11 @@ main {
 }
 
 .aboutUs {
-    box-shadow: 0 0 5px #ededed;
     padding: 15px 20px 0 20px;
     color: #323031;
     margin: auto;
-    border-radius: 50px 2px 50px 2px;
-    background-color: #ededed;
+    border-radius: 2px;
+    background-color: #042d3846;
     width: 60%;
     height: 100%;
 }

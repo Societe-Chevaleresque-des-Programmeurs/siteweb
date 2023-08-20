@@ -3,9 +3,9 @@
         {{ range .Pages }}
             <div class="singleEvent">
                 <img class="imageEvent" src="">
-                <h2 class="titreEvent">{{ .Title }}</h2>
-                <h2 class="dateEvent">{{ .Date.Format "01-02-2006" }}</h2>
-                <h3 class="resume">{{ .Summary }}</h3>   
+                <p class="titreEvent">{{ .Title }}</p>
+                <p class="dateEvent">{{ .Date.Format "01-02-2006" }}</p>
+                <p class="resume">{{ .Summary }}</p>   
             </div>
         {{ end }}
     </main>
