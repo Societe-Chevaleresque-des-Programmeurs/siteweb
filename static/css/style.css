@@ -344,6 +344,7 @@ main {
     grid-auto-rows: 25vh;
     row-gap: 10vh;
     padding: 4vh 0 20vh 0;
+    
 }
 
 .membresConseil:first-child {
@@ -351,7 +352,7 @@ main {
 }
 
 .membre {
-    color: #323031;
+    color: #edededb8;
     width: 60vw;
     height: 25vh;
     margin: 5vh auto 5vh auto;
