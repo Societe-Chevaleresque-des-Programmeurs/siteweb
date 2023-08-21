@@ -3,7 +3,7 @@
         {{ range sort .Pages ".Weight" }}
         {{ if or (eq .Params.en_cours "oui") (eq .Params.en_cours "non") }}
         <div class="membre">            
-            <p class="titre">{{ .Params.Titre }}</p>
+            <p class="grade">{{ .Params.Titre }}</p>
             <p class="nom">{{ .Params.Nom }}</p>
             <p class="info">{{ .Params.Niveau }}</p>
             <p class="description">{{ .Params.Description }}</p> <!-- optionnel -->

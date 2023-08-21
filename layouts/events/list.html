@@ -2,10 +2,12 @@
     <main class="events">
         {{ range .Pages }}
             <div class="singleEvent">
-                <img class="imageEvent" src="">
+                <img class="imageEvent" src="media/blason.png">
                 <p class="titreEvent">{{ .Title }}</p>
-                <p class="resume">{{ .Summary }}</p> 
+                <p class="resume">{{ .Summary }} <a href="">...en savoir plus ?</a></p> 
+                
                 <p class="date">{{ .Date.Format "01-02-2006" }}</p>
+                <p class="statut">En cours/terminé</p>
                   
             </div>
         {{ end }}

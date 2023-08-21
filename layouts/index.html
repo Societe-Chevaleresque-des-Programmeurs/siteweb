@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main>
-    <img class="logo" src="media/assoLogo.png">
+    <img class="logo" src="media/blason.png">
     <h2>Bienvenue sur le site de la SCP37</h2>
     
     {{ partial "links" . }}
@@ -10,7 +10,9 @@
 
         <div class="pres">
             <h2>Qui sommes nous ?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquid, veniam provident unde tempore quos facere? Aspernatur blanditiis inventore recusandae explicabo possimus ipsam, exercitationem porro vel, quam et voluptate dolorum.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquid, veniam provident unde tempore quos facere? Aspernatur blanditiis inventore recusandae explicabo possimus ipsam, exercitationem porro vel, quam et voluptate dolorum.
+            </p>
         </div>
 
         <div class="side droit"></div>
@@ -20,13 +22,34 @@
     <button class="options" onclick="location=''"><p>S'inscrire ?</p></button>
     <button class="options" onclick="location=''"><p>Nous contacter</p></button>
 
-    <div class="nextEvent">
+    <div class="nextEvents">
         <h2 class="section">Prochain évènement</h2>
-        <div class="currentEvent">
-            <img class="imageEvent" src="media/assoLogo.png">
-            <h2 class="titreEvent">Event sympa</h2>
-            <h2 class="date">01/01/2023</h2>
-            <h3 class="resume">un event très très sympa</h3>
+        <div class="currentEvents">
+
+            <div class="event">
+                <img class="illustration" src="media/blason.png">
+                <p class="titre">Event sympa</p>
+                <p class="when">01/01/2023</p>
+                <a class="more" href="">En savoir plus</a>
+            </div>
+            <div class="event">
+                <img class="illustration" src="media/assoLogo.png">
+                <p class="titre">Event sympa</p>
+                <p class="when">01/01/2023</p>
+                <a class="more" href="">En savoir plus</a>
+            </div>
+            <div class="event">
+                <img class="illustration" src="">
+                <p class="titre">Event sympa</p>
+                <p class="when">01/01/2023</p>
+                <a class="more" href="">En savoir plus</a>
+            </div>
+            
+            
+            
+            
+            
         </div>
+    </div>
 </main>
 {{ end }}
