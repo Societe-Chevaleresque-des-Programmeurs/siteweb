@@ -2,8 +2,9 @@
 baseURL = 'https://societe-chevaleresque-des-programmeurs.github.io/'
 languageCode = 'fr'
 defaultContentLanguage = 'fr'
-title = 'SCP~37
-publishDir = "docs"
+title = 'SCP~37'
+publishDir = 'docs'
+
 [params]
     titreBanniere = "Bienvenue sur le site de la SCP37"
     descriptionBanniere = "Ceci est la jolie description de la SCP"
