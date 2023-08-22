@@ -2,10 +2,7 @@
 baseURL = ''
 languageCode = 'fr'
 defaultContentLanguage = 'fr'
-title = 'SCP~37'
-
-# Necessaire pour les actions github
-publishDir = "docs"
+title = 'SCP~37
 
 [params]
     titreBanniere = "Bienvenue sur le site de la SCP37"
