@@ -1,9 +1,9 @@
 ---
-titre: "Paysan"
+Grade: "Paysan"
 niveau: "-L2"
 nom: "Kevin"
 weight: 100
-en_cours: "non"
+membre_actuel: "non"
 description: "uine des azdaz daad azed zaa azd az "
 ---
 

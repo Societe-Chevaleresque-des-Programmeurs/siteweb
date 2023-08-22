@@ -1,7 +1,8 @@
 {{ define "main" }}
 <main>
-    <img class="logo" src="media/blason.png">
-    <h2>Bienvenue sur le site de la SCP37</h2>
+    <img class="logo" src="{{ .Site.Params.LogoBanniere }}">
+    <h2>{{ .Site.Params.titreBanniere }}</h2>
+    <p>{{ .Site.Params.descriptionBanniere }}</p>
     
     {{ partial "links" . }}
 
@@ -25,31 +26,23 @@
     <div class="nextEvents">
         <h2 class="section">Prochain évènement</h2>
         <div class="currentEvents">
+            {{ range (where .Site.RegularPages "Section" "events")}}
+            {{ if .Page.Params.En_cours }}
+                <div class="event">
+                    {{ $image := .Page.Resources.GetMatch "illustration.png" }}
+                    {{ if $image }}
+                        <img class="illustration" src="{{ $image.RelPermalink }}">
+                    {{ else }}
+                        <img class="illustration" src="{{ .Site.Params.LogoDefaut }}">
+                    {{ end }}
 
-            <div class="event">
-                <img class="illustration" src="media/blason.png">
-                <p class="titre">Event sympa</p>
-                <p class="when">01/01/2023</p>
-                <a class="more" href="">En savoir plus</a>
+                    <p class="titre">{{ .Title }}</p>
+                    <p class="when">{{ .Date.Format "01-02-2006" }}</p>
+                    <a class="more" href="{{ .Permalink }}">En savoir plus</a>
+                </div>
             </div>
-            <div class="event">
-                <img class="illustration" src="media/assoLogo.png">
-                <p class="titre">Event sympa</p>
-                <p class="when">01/01/2023</p>
-                <a class="more" href="">En savoir plus</a>
-            </div>
-            <div class="event">
-                <img class="illustration" src="">
-                <p class="titre">Event sympa</p>
-                <p class="when">01/01/2023</p>
-                <a class="more" href="">En savoir plus</a>
-            </div>
-            
-            
-            
-            
-            
-        </div>
+            {{ end }}
+        {{ end }}
     </div>
 </main>
 {{ end }}

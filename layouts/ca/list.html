@@ -1,14 +1,29 @@
 {{ define "main" }}
     <main class="membresConseil">
-        {{ range sort .Pages ".Weight" }}
-        {{ if or (eq .Params.en_cours "oui") (eq .Params.en_cours "non") }}
-        <div class="membre">            
-            <p class="grade">{{ .Params.Titre }}</p>
-            <p class="nom">{{ .Params.Nom }}</p>
-            <p class="info">{{ .Params.Niveau }}</p>
-            <p class="description">{{ .Params.Description }}</p> <!-- optionnel -->
-        </div>
+        <section>
+            <h2>Membres du conseil:</h2>
+            {{ range sort .Pages ".Weight" }}
+                {{ if .Params.membre_actuel  }}
+                    <div class="membre">            
+                        <p class="grade">{{ .Params.Grade }}</p>
+                        <p class="nom">{{ .Params.Nom }}</p>
+                        <p class="niveau">{{ .Params.Niveau }}</p>
+                        <p class="description">{{ .Params.Description }}</p>
+                    </div>
+                {{ end }}
+            {{ end }}
+        </section>
+
+        <section>
+            <h2>Anciens membre</h2>
+            {{ range sort .Pages }}
+            {{ if not .Params.membre_actuel  }}
+                <div class="membresConseil">      
+                    <p>{{ .Params.Nom }}</p>
+                    <p>{{ .Params.Description }}</p>
+                </div>
+            {{ end }}
         {{ end }}
-        {{ end }}
+        </section>
     </main>            
 {{ end }}

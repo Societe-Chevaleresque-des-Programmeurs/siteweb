@@ -2,13 +2,22 @@
     <main class="events">
         {{ range .Pages }}
             <div class="singleEvent">
-                <img class="imageEvent" src="media/blason.png">
+                {{ $image := .Page.Resources.GetMatch "illustration.png" }}
+                {{ if $image }}
+                    <img class="imageEvent" src="{{ $image.RelPermalink }}">
+                {{ else }}
+                    <img class="imageEvent" src="{{ .Site.Params.LogoDefaut }}">
+                {{ end }}
                 <p class="titreEvent">{{ .Title }}</p>
-                <p class="resume">{{ .Summary }} <a href="">...en savoir plus ?</a></p> 
+                <p class="resume">{{ .Summary }} <a href="{{ .Permalink }}">...en savoir plus ?</a></p> 
                 
                 <p class="date">{{ .Date.Format "01-02-2006" }}</p>
-                <p class="statut">En cours/terminé</p>
-                  
+
+                {{ if .Params.En_cours }}
+                <p class="statut">En cours</p>
+                {{ else }}
+                <p class="statut">Fini</p>
+                {{ end }}
             </div>
         {{ end }}
     </main>
