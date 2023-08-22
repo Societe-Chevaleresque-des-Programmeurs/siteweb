@@ -1,5 +1,5 @@
 # Configuration
-baseURL = ''
+baseURL = 'https://societe-chevaleresque-des-programmeurs.github.io'
 languageCode = 'fr'
 defaultContentLanguage = 'fr'
 title = 'SCP~37
