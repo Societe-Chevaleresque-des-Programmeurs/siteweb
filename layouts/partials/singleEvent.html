@@ -1,0 +1,12 @@
+<div class="singleEvent">
+    {{ $image := .Page.Resources.GetMatch "illustration.png" }}
+    {{ if $image }}
+        <img class="imageEvent" src="{{ $image.RelPermalink }}">
+    {{ else }}
+        <img class="imageEvent" src="{{ .Site.Params.LogoDefaut }}">
+    {{ end }}
+    <p class="titreEvent">{{ .Title }}</p>
+    <p class="resume">{{ .Summary }}</p> 
+    <p class="date">{{ .Date.Format "01-02-2006" }}</p>
+    <button class="options" onclick="location=''"><p>Decouvrir</p></button>
+</div>

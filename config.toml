@@ -4,6 +4,12 @@ languageCode = 'fr'
 defaultContentLanguage = 'fr'
 title = 'SCP~37'
 
+[params]
+    titreBanniere = "Bienvenue sur le site de la SCP37"
+    descriptionBanniere = "Ceci est la jolie description de la SCP"
+    logoDefaut = "media/assoLogo.png"
+    logoBanniere = "media/logoBouclier.png"
+
 # liste toutes les pages
 sectionPagesMenu = "toutesLesPages"
 
@@ -18,7 +24,7 @@ sectionPagesMenu = "toutesLesPages"
     weight = 20
     pageRef = '/events'
     [[menu.main]]
-    name = '/membres'
+    name = '/conseil'
     pageRef = '/ca'
     weight = 30
     [[menu.main]]
@@ -42,6 +48,16 @@ sectionPagesMenu = "toutesLesPages"
         weight = 3
         title = "Rejoignez l'asso!"
 
+
+    [[menu.footer]]
+        name = "reglement"
+        url = ""
+        weight = 1
+
+    [[menu.footer]]
+        name = "charte"
+        url = ""
+        weight = 1
 
 # [params]
 #     disableShortcutsTitle=true

@@ -323,7 +323,7 @@ main {
     align-self: center;
 }
 
-.info {
+.niveau {
     margin: 0;
     grid-column: 1;
     grid-row: 3;
@@ -333,12 +333,40 @@ main {
 .description {
     border-left: solid 1px #053442;
     margin: 0;
-    grid-column: 2;
     grid-row: 1/-1;
-    text-align: start;
+    
+    /*** Edit de gabriel! ***/
+    display: grid;
+    place-items: center;
+    /*
     padding-left: 10px;
     padding-top: 10px;
-    text-align: center;
+    text-align: start;
+    grid-column: 2;
+    */
+}
+
+/*** Edit de gabriel! ***/
+.ancienMembre {
+    color: #323031;
+    width: 60vw;
+    margin: 1vh auto 1vh auto;
+    background-color: #042d3846;
+    box-shadow: 0 0 10px #084C61be;
+    border-radius: 5px 2px 5px 2px;
+    padding: 5px 0px 5px 20px;
+    transition: 0.2s ease-out;
+    text-align: left;
+}
+
+.ancienMembre:hover {
+    transition: 0.2s ease-in;
+    transform: scale(1.01);
+}
+
+.clickInvisible:hover, .clickInvisible:visited, .clickInvisible:link, .clickInvisible:active
+{
+    text-decoration: none;
 }
 
 /*** Style de la page de présentation ***/

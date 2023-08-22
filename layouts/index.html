@@ -1,16 +1,16 @@
 {{ define "main" }}
 <main>
-    <img class="logo" src="media/assoLogo.png">
-    <h2>Bienvenue sur le site de la SCP37</h2>
-    
+    <img class="logo" src="{{ .Site.Params.logoBanniere }}">
+    <h2>{{ .Site.Params.titreBanniere }}</h2>
+    <p>{{ .Site.Params.descriptionBanniere }}</p>
+
     {{ partial "links" . }}
 
     <div class="presentation">
         <div class="side gauche"></div>
 
         <div class="pres">
-            <h2>Qui sommes nous ?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquid, veniam provident unde tempore quos facere? Aspernatur blanditiis inventore recusandae explicabo possimus ipsam, exercitationem porro vel, quam et voluptate dolorum.</p>
+            {{ .Content }}
         </div>
 
         <div class="side droit"></div>
@@ -22,11 +22,12 @@
 
     <div class="nextEvent">
         <h2 class="section">Prochain évènement</h2>
-        <div class="currentEvent">
-            <img class="imageEvent" src="media/assoLogo.png">
-            <h2 class="titreEvent">Event sympa</h2>
-            <h2 class="date">01/01/2023</h2>
-            <h3 class="resume">un event très très sympa</h3>
+        <div class="events">
+            {{ range (where .Site.RegularPages "Section" "events")}}
+                {{ if .Params.en_cours}}
+                    {{ partial "singleEvent" . }}
+                {{ end }}
+            {{ end }}
         </div>
 </main>
 {{ end }}
