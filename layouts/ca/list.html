@@ -1,6 +1,5 @@
 {{ define "main" }}
     <main class="membresConseil">
-        <section>
             <h2>Membres du conseil:</h2>
             {{ range sort .Pages ".Weight" }}
                 {{ if .Params.membre_actuel  }}
@@ -12,18 +11,17 @@
                     </div>
                 {{ end }}
             {{ end }}
-        </section>
-
-        <section>
+        
             <h2>Anciens membre</h2>
             {{ range sort .Pages }}
             {{ if not .Params.membre_actuel  }}
-                <div class="membresConseil">      
-                    <p>{{ .Params.Nom }}</p>
-                    <p>{{ .Params.Description }}</p>
+                <div class="membre">      
+                    <p class="grade"></p>
+                    <p class="nom">{{ .Params.Nom }}</p>
+                    <p class="niveau"></p>
+                    <p class="description">{{ .Params.Description }}</p>
                 </div>
             {{ end }}
         {{ end }}
-        </section>
     </main>            
 {{ end }}
