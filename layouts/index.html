@@ -21,29 +21,37 @@
     <button class="options" onclick="location=''"><p>Nous contacter</p></button>
 
     <div class="nextEvents">
-        <h2 class="section">Prochains évènements</h2>
-        <div class="currentEvents">
-            {{ range (where .Site.RegularPages "Section" "events")}}
-            {{ if .Page.Params.En_cours }}
-                <div class="event">
-                    {{ $image := .Page.Resources.GetMatch "illustration.png" }}
-                    {{ if $image }}
-                        <img class="illustration" src="{{ $image.RelPermalink }}">
-                    {{ else }}
-                        <img class="illustration" src="{{ .Site.Params.LogoDefaut }}">
+        {{ with .Site.GetPage "page" "/events/" }}
+            {{ $events := where .Pages "Params.en_cours" true  }}
+
+            <h2 class="section">Prochains évènements</h2>
+            {{ if $events }}
+                <div class="currentEvents">
+
+                    {{ range $events }}
+                        <div class="event">
+                            {{ $image := .Page.Resources.GetMatch "illustration.png" }}
+                            {{ if $image }}
+                                <img class="illustration" src="{{ $image.RelPermalink }}">
+                            {{ else }}
+                                <img class="illustration" src="{{ .Site.Params.LogoDefaut }}">
+                            {{ end }}
+
+                            <p class="titre">{{ .Title }}</p>
+                            <p class="when">{{ .Date.Format "01-02-2006" }}</p>
+                            <a class="more" href="{{ .Permalink }}">En savoir plus</a>
+                        </div>
                     {{ end }}
 
-                    <p class="titre">{{ .Title }}</p>
-                    <p class="when">{{ .Date.Format "01-02-2006" }}</p>
-                    <a class="more" href="{{ .Permalink }}">En savoir plus</a>
+                    <button class="avant" onclick="moveCarousel(event);"><</button>
+                    <button class="apres" onclick="moveCarousel(event);">></button>
+                    <script src="js/carousel.js"></script>
                 </div>
+
+            {{ else }}
+                <p>Pas d'évènement prévu pour l'instant!</p>
             {{ end }}
-            {{ end }}
-            <button class="avant" onclick="moveCarousel(event);"><</button>
-            <button class="apres" onclick="moveCarousel(event);">></button>
-        </div>
-        
+        {{ end }}
     </div>
-    <script src="js/carousel.js"></script>
 </main>
 {{ end }}
