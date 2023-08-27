@@ -51,10 +51,10 @@ sectionPagesMenu = "toutesLesPages"
 
     [[menu.footer]]
         name = "reglement"
-        url = ""
+        pageRef = "/reglement"
         weight = 1
 
     [[menu.footer]]
         name = "charte"
-        url = ""
+        pageRef = "/charte"
         weight = 1
