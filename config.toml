@@ -5,8 +5,8 @@ defaultContentLanguage = 'fr'
 title = 'SCP~37'
 
 [params]
-    titreBanniere = "Bienvenue sur le site de la SCP37"
-    descriptionBanniere = "Ceci est la jolie description de la SCP"
+    titreBanniere = "Bienvenue sur le site de la SCP~37"
+    descriptionBanniere = "Association d'informatique basé à l'université de Tours."
     logoDefaut = "media/assoLogo.png"
     logoBanniere = "media/blason.png"
 

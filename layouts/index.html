@@ -16,9 +16,10 @@
         <div class="side droit"></div>
 
     </div>
-
-    <button class="options" onclick="location=''"><p>S'inscrire ?</p></button>
-    <button class="options" onclick="location=''"><p>Nous contacter</p></button>
+    
+    {{ $contact := "/contact" | absURL  }}
+    <button class="options" onclick="location='https\://www.helloasso.com/associations/societe-chevaleresque-des-programmeurs-37/adhesions/adhesion-2023-2024'"><p>S'inscrire ?</p></button>
+    <button class="options" onclick="location='{{ $contact }}'"><p>Nous contacter</p></button>
 
     <div class="nextEvents">
         {{ with .Site.GetPage "page" "/events/" }}
