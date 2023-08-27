@@ -11,17 +11,18 @@
                     </div>
                 {{ end }}
             {{ end }}
-        
+
+            {{ $anciensMembres := where .Pages "Params.membre_actuel" false  }}
+            {{ if $anciensMembres }}
             <h2>Anciens membre</h2>
-            {{ range sort .Pages }}
-            {{ if not .Params.membre_actuel  }}
-                <div class="membre">      
-                    <p class="grade"></p>
-                    <p class="nom">{{ .Params.Nom }}</p>
-                    <p class="niveau"></p>
-                    <p class="description">{{ .Params.Description }}</p>
-                </div>
+                {{ range sort $anciensMembres }}
+                        <div class="membre">      
+                            <p class="grade"></p>
+                            <p class="nom">{{ .Params.Nom }}</p>
+                            <p class="niveau"></p>
+                            <p class="description">{{ .Params.Description }}</p>
+                        </div>
+                {{ end }}
             {{ end }}
-        {{ end }}
     </main>            
 {{ end }}
