@@ -1,7 +1,7 @@
 ---
-title: "ceci est un titre"
+title: "Evénement de pre-rentré"
 en_cours: false
 date: "2019-03-24"
 ---
 
-le futur event
+A venir.
