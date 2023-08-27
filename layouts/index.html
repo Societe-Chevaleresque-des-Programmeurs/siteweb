@@ -21,7 +21,7 @@
     <button class="options" onclick="location=''"><p>Nous contacter</p></button>
 
     <div class="nextEvents">
-        <h2 class="section">Prochain évènement</h2>
+        <h2 class="section">Prochains évènements</h2>
         <div class="currentEvents">
             {{ range (where .Site.RegularPages "Section" "events")}}
             {{ if .Page.Params.En_cours }}
@@ -37,9 +37,13 @@
                     <p class="when">{{ .Date.Format "01-02-2006" }}</p>
                     <a class="more" href="{{ .Permalink }}">En savoir plus</a>
                 </div>
-            </div>
             {{ end }}
-        {{ end }}
+            {{ end }}
+            <button class="avant" onclick="moveCarousel(event);"><</button>
+            <button class="apres" onclick="moveCarousel(event);">></button>
+        </div>
+        
     </div>
+    <script src="js/carousel.js"></script>
 </main>
 {{ end }}

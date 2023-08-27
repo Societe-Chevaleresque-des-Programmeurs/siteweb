@@ -1,0 +1,177 @@
+/*
+#FFC85C gold orange tinge
+#053442 dark blue steel
+#323031 black
+#323031bc black shadow
+#DB3A34 tomato red
+#052f3bc6 hover dark blue steel
+#084c61 blue steel
+#177e89 light blue steel
+#c2c2c2 grayish white
+#03232c dark blue
+#03232c88 transparent dark blue
+#042d3846 night blue steel
+#084C61be transparent blue steel
+#edededb8 silver white 
+
+*/
+
+
+body {
+    color:#FFC85C;
+}
+
+/***    Style de la barre de navigation    ***/
+
+nav {
+    background-color: #053442;
+    box-shadow: 0 2px 5px 0 #323031bc;
+}
+
+nav:hover {
+    box-shadow: 0 5px 5px 0 #323031bc;
+}
+
+nav a {
+    color:#FFC85C;
+}
+
+nav a:hover {
+    color:#DB3A34;
+    background-color: #052f3bc6;
+}
+
+/***    Style du contenu principal     ***/
+
+main {
+
+    /* jet black and silver white band 
+
+    background: rgb(50,48,49);
+    background: linear-gradient(90deg, rgba(50,48,49,1) 0%, rgba(237,237,237,1) 30%, rgba(237,237,237,1) 70%, rgba(50,48,49,1) 100%);
+    */
+
+    /* silver white and jet black band 
+
+    background: rgb(237,237,237);
+    background: linear-gradient(90deg, rgba(237,237,237,1) 0%, rgba(50,48,49,1) 30%, rgba(50,48,49,1) 70%, rgba(237,237,237,1) 100%);
+    */
+
+    /* dark steel blue gradient 
+
+    background: rgb(8,76,97);
+    background: linear-gradient(117deg, rgba(8,76,97,1) 0%, rgba(44,44,121,1) 64%, rgba(23,126,137,1) 100%);
+    */
+
+    background: #084c61;
+    background: linear-gradient(121deg, #084c61 0%, #177e89 100%);
+
+    /* light orange white gradient
+
+    background: rgb(237,237,237);
+    background: linear-gradient(117deg, rgba(237,237,237,1) 47%, rgba(255,200,87,1) 64%);
+    */
+
+}
+
+.side {
+    background-color: #03232c88;
+}
+
+.pres {
+    background-color: #042d3846;
+}
+
+.options {
+    background-color: #FFC85C;
+    color: #053442;
+    box-shadow: 0 0 5px 0 #323031bc;
+}
+
+.options:hover {
+    background-color: #DB3A34;
+    color: #FFC85C;
+}
+
+.event {
+    background-color: #042d3846;
+    box-shadow: 0 0 10px #084C61be;
+    color: #edededb8;
+}
+
+.currentEvents button {
+    background-color: #e1dbe127;
+    color: #b8b3b8b8;
+}
+
+.currentEvents button:hover {
+    background-color: #e1dbe155;
+}
+
+.illustration {
+    border-bottom: solid 1px #042d3846;
+}
+
+.more {
+    color: #03232c;
+}
+
+.more:hover {
+    color: #0d032c88;
+}
+
+/*** Page des événements ***/
+
+.events {
+    color: #323031;
+}
+
+.singleEvent {
+    background-color: #042d3846;
+    box-shadow: 0 0 10px #084C61be;
+    color: #edededb8;
+}
+
+.resume a {
+    color: #03232c;
+}
+
+.resume a:hover {
+    color: #0d032c88;
+    transition: 0.2s ease-in;
+}
+
+/*** Page du conseil ***/
+
+.membre {
+    color: #edededb8;
+    background-color: #042d3846;
+    box-shadow: 0 0 10px #084C61be;
+}
+
+
+.description {
+    border-left: solid 1px #053442;
+}
+
+/*** Style de la page de présentation ***/
+
+.aboutUs {
+    color: #FFC85C;
+    background-color: #042d3846;
+}
+
+.image {
+    border: solid 2px #FFC85C;
+}
+
+
+/***    Style du bas de page     ***/
+
+footer {
+    background-color: #03232c;
+}
+
+footer a {
+    color: #ededed;
+}

@@ -5,7 +5,6 @@ body {
     grid-template-rows: auto minmax(80dvh, auto) 15dvh;
     min-height: 100%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color:#FFC85C;
 }
 
 
@@ -14,66 +13,32 @@ body {
 
 nav {
     z-index: 7;
-    background-color: #053442;
     position: sticky;
     top: 0;
     display: grid;
     grid-template-columns: auto 20% 20% 20% 20% auto;
     
-    box-shadow: 0 2px 5px 0 #323031bc;
     transition: 0.5s ease-out;
 }
 
 nav:hover {
     transition: 0.5s ease-in;
-    box-shadow: 0 5px 5px 0 #323031bc;
 }
 
 nav a {
     text-decoration: none;
     text-align: center;
     transition: 0.3s ease-out;
-    color:#FFC85C;
     font-size: max(1.1vw, 12px);
 }
 
 nav a:hover {
-    color:#DB3A34;
-    background-color: #052f3bc6;
     transition: 0.3s ease-in;
 }
 
 /***    Style du contenu principal     ***/
 
 main {
-
-    /* jet black and silver white band 
-
-    background: rgb(50,48,49);
-    background: linear-gradient(90deg, rgba(50,48,49,1) 0%, rgba(237,237,237,1) 30%, rgba(237,237,237,1) 70%, rgba(50,48,49,1) 100%);
-    */
-
-    /* silver white and jet black band 
-
-    background: rgb(237,237,237);
-    background: linear-gradient(90deg, rgba(237,237,237,1) 0%, rgba(50,48,49,1) 30%, rgba(50,48,49,1) 70%, rgba(237,237,237,1) 100%);
-    */
-
-    /* dark steel blue gradient 
-
-    background: rgb(8,76,97);
-    background: linear-gradient(117deg, rgba(8,76,97,1) 0%, rgba(44,44,121,1) 64%, rgba(23,126,137,1) 100%);
-    */
-
-    background: rgb(8,76,97);
-    background: linear-gradient(121deg, rgba(8,76,97,1) 0%, rgba(23,126,137,1) 100%);
-
-    /* light orange white gradient
-
-    background: rgb(237,237,237);
-    background: linear-gradient(117deg, rgba(237,237,237,1) 47%, rgba(255,200,87,1) 64%);
-    */
-
     overflow-y: auto;
     text-align: center;
 }
@@ -82,6 +47,7 @@ main {
 .logo {
     display: block;
     width: 22vw;
+    min-width: 15em;
     margin: 5% auto 0 auto;
 }
 
@@ -109,14 +75,20 @@ main {
 
 .helloAssoLogo {
     width: 2pc;
+    padding-top: 1px;
 }
 
 .fa-discord {
     color:#7a78cb;
 }
 
-.fa-square-instagram {
-    color: rgb(194, 194, 194);
+.fa-instagram {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    background-clip: text;
+    color: transparent;
+    height: 11px;
+    padding-top: 10px;
 }
 
 .presentation {
@@ -128,7 +100,6 @@ main {
 
 .side {
     height: 2px;
-    background-color: #03232c88;
     width: 18vw;
     align-self: center;
     justify-self: center;
@@ -141,7 +112,6 @@ main {
 
 .pres {
     grid-column: 2;
-    background-color: #042d3846;
     height: auto;
     min-height: 30rem;
     border-radius: 2px;
@@ -152,8 +122,6 @@ main {
 }
 
 .options {
-    background-color: #FFC85C;
-    color: #053442;
     margin-right: 10px;
     width: 15%;
     height: 50px;
@@ -162,7 +130,6 @@ main {
     line-height: 0;
     border: none;
     border-radius: 2px;
-    box-shadow: 0 0 5px 0 #323031bc;
     cursor: pointer;
     transition: 0.2s ease-out;
     min-width: 8em;
@@ -171,8 +138,6 @@ main {
 .options:hover {
     transition: 0.2s ease-in;
     transform: scale(1.03);
-    background-color: #DB3A34;
-    color: #FFC85C;
 }
 
 
@@ -184,6 +149,7 @@ main {
     grid-row: 5% 95%;
 }
 
+/** De base 
 .currentEvents {
     width: 70%;
     min-width: 26rem;
@@ -194,25 +160,60 @@ main {
     
 }
 
+**/
+
+.currentEvents {
+    width: 16.1em;
+    height: 26.7em;
+    margin: 2em auto 1em auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16.2em, 1fr));
+    grid-template-rows: 90% 10%;
+    overflow-x: hidden;
+}
+
+
+.currentEvents:first-child {
+    grid-column: 1;
+}
+
+
 
 .event {
-    margin: 10vh auto 5vh auto;
-    width: 35vh;
-    height: 50vh;
+    grid-row: 1;
+    margin: 0 auto 0 auto;
+    width: 16.5em;
+    height: 24em;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 70% 20% 10%;
-    background-color: #042d3846;
-    box-shadow: 0 0 10px #084C61be;
-    color: #edededb8;
+    transition: 1s ease;
+}
+
+.currentEvents button {
+    border: none;
+    font-weight: bolder;
+    font-size: larger;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    width: 6.7em;
+}
+
+.currentEvents button:hover {
     transition: 0.2s ease-out;
 }
 
-
-.event:hover {
-    transition: 0.2s ease-in;
-    transform: scale(1.01);
+.avant {
+    grid-column: 1;
+    grid-row: 2;
 }
+
+.apres {
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 6.7em;
+}
+
 
 .illustration {
     grid-row: 1;
@@ -220,7 +221,6 @@ main {
     object-fit: cover;
     width: 100%;
     max-height: 100%;
-    border-bottom: solid 1px #03232c;
 }
 
 .titre {
@@ -228,26 +228,26 @@ main {
     height: 100%;
     grid-row: 2;
     grid-column: 1/-1;
-    font-size: 1.7vw;
+    font-size: 1.9em;
+    font-style: bold;
 }
 
 .when {
     margin: 0;
     grid-row: 3;
     grid-column: 1;
+    font-style: italic;
 }
 
 .more {
     margin: 0;
     grid-row: 3;
     grid-column: 2;
-    color: #03232c;
     transition: 0.2s ease-in;
 }
 
 
 .more:hover {
-    color: #0d032c;
     transition: 0.2s ease-in;
 }
 
@@ -257,10 +257,11 @@ main {
 
 .events {
     display: grid;
-    grid-auto-rows: 35vh;
-    color: #323031;
+    grid-auto-rows: 20vw;
+    grid-template-columns: 100vw;
     row-gap: 25px;
     padding: 4vh 0 2vh 0;
+    overflow-x: hidden;
 }
 
 
@@ -268,14 +269,11 @@ main {
     border-radius: 2px;
     margin: 0 auto 0 auto;
     width: 60%;
-    background-color: #042d3846;
-    box-shadow: 0 0 10px #084C61be;
     border: none;
     display: grid;
     grid-template-columns: 30% 20% 50%;
     grid-template-rows: 15% 60% 25%;
     transition: 0.2s ease-out;
-    color: #edededb8;
 }
 
 
@@ -285,15 +283,13 @@ main {
     transform: scale(1.01);
 }
 
-.singleEvent img {
-    height: 100%;
-}
 
 .imageEvent {
     grid-row: 1/-1;
     grid-column: 1;
     object-fit: cover;
     width: 100%;
+    height: 100%;
     max-height: 100%;
 }
 
@@ -302,7 +298,7 @@ main {
     grid-row: 1;
     grid-column: 2/-1;
     width: 100%;
-    font-size: 2.5vw;
+    font-size: max(2.5vw, 1em);
     padding-left: 10px;
     text-align: left;
 }
@@ -310,18 +306,17 @@ main {
 .resume {
     grid-row: 2;
     grid-column: 2/-1;
-    font-size: 1.5vw;
+    font-size: max(1.5vw, 0.5em);
     text-align: left;
     padding-left: 10px;
+    overflow: hidden;
 }
 
 .resume a {
-    color: #03232c;
     transition: 0.2s ease-in;
 }
 
 .resume a:hover {
-    color: #0d032c;
     transition: 0.2s ease-in;
 }
 
@@ -329,14 +324,14 @@ main {
 .date {
     grid-row: 3;
     grid-column: 2;
-    font-size: 1.2vw;
+    font-size: max(1.2vw, 0.5em);
     font-style: italic;
 }
 
 .statut {
     grid-row: 3;
     grid-column: 3;
-    font-size: 1.2vw;
+    font-size: max(1.2vw, 0.5em);
 }
 
 /*** Page du conseil ***/
@@ -354,12 +349,9 @@ main {
 
 
 .membre {
-    color: #edededb8;
     width: 50vw;
     height: 15vh;
     margin: 0vh auto 5vh auto;
-    background-color: #042d3846;
-    box-shadow: 0 0 10px #084C61be;
     border-radius: 50px 2px 50px 2px;
     display: grid;
     grid-template-columns: 30% 70%;
@@ -393,7 +385,6 @@ main {
 }
 
 .description {
-    border-left: solid 1px #053442;
     margin: 0;
     grid-column: 2;
     grid-row: 1/-1;
@@ -413,28 +404,48 @@ main {
 
 .aboutUsPage {
     display: grid;
-    padding: 4vh 0 5vh 0;
+    padding: 4vh 0 6vh 0;
 }
 
 .aboutUs {
-    padding: 15px 20px 0 20px;
-    color: #323031;
+    padding: 0 20px 0 20px;
     margin: auto;
     border-radius: 2px;
-    background-color: #042d3846;
     width: 60%;
     height: 100%;
+    
 }
 
-.aboutUs p {
-    text-align: justify;
+.singleTitle {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.singleContent {
+    text-align: left;
+    font-style: italic;
+    font-size: large;
+}
+
+.embededVideo {
+    width: 45vw;
+    min-width: 15em;
+    height: 30vw;
+    margin: 5em 0 5em;
+}
+
+.image {
+    width: 25vw;
+    min-width: 15em;
+    height: 25vw;
+    min-height: 15em;
+    margin: 5em 0 5em;
 }
 
 
 /***    Style du bas de page     ***/
 
 footer {
-    background-color: #03232c;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(0, auto));
     justify-content: center;
@@ -442,6 +453,3 @@ footer {
     gap: 20px;
 }
 
-footer a {
-    color: #ededed;
-}

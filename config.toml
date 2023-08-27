@@ -38,7 +38,7 @@ sectionPagesMenu = "toutesLesPages"
         weight = 1
         title = "Découvez notre discord!"
     [[menu.shortcuts]]
-        name = "<i class='fa-brands fa-square-instagram fa-xl'></i>"
+        name = "<i class='fab fa-instagram fa-xl'></i>"
         url = ""
         weight = 2
         title = "Suivez-nous sur Instagram!"

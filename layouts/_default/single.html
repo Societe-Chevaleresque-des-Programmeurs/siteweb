@@ -1,7 +1,15 @@
 {{ define "main" }}
     <main class="aboutUsPage">
         <div class="aboutUs">
-            {{ .Content }}
+            <p class="singleTitle">{{ .Title }}</p>
+            
+            <div class="singleContent">{{ .Content }}</div>
+
+            <!-- A voir si il y a des conditions 
+            avec hugo pour les afficher si les suivants sont présents-->
+
+            <!--<img class="image"> Pour inclure une image-->
+            <!--<iframe class="embededVideo"></iframe> Pour inclure des vidéos --> 
         </div>
     </main>
 {{ end }}
