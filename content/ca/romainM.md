@@ -1,5 +1,5 @@
 ---
-grade: "Trésorier"
+grade: "Trésorier | co-webmaster"
 niveau: "L3"
 nom: "Romain"
 weight: 3

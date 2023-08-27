@@ -1,5 +1,5 @@
 ---
-grade: "Secrétaire | Webmaster"
+grade: "Secrétaire"
 niveau: "1ère année cycle ingénieur"
 nom: "Romain"
 weight: 2
