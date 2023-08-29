@@ -3,7 +3,7 @@
             <h2>Membres du conseil:</h2>
             {{ range sort .Pages ".Weight" }}
                 {{ if .Params.membre_actuel  }}
-                    <div class="membre">            
+                    <div class="membre" onclick="location.href='{{ .Permalink }}';">            
                         <p class="grade">{{ .Params.Grade }}</p>
                         <p class="nom">{{ .Params.Nom }}</p>
                         <p class="niveau">{{ .Params.Niveau }}</p>
@@ -16,7 +16,7 @@
             {{ if $anciensMembres }}
             <h2>Anciens membre</h2>
                 {{ range sort $anciensMembres }}
-                        <div class="membre">      
+                        <div class="membre" onclick="location.href='{{ .Permalink }}';">      
                             <p class="grade"></p>
                             <p class="nom">{{ .Params.Nom }}</p>
                             <p class="niveau"></p>
