@@ -161,6 +161,12 @@ main {
     background-color: #042d3846;
 }
 
+.aboutUs a {
+    color: #ffee00;
+    font-weight: 500;
+}
+
+
 .image {
     border: solid 2px #FFC85C;
 }
