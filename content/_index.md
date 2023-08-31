@@ -20,4 +20,4 @@ Nos objectifs sont multiples :
 
 ### Pourquoi 5 euros ?
 
-L'argent que nous récoltons contribue à faire vivre l'association afin que puissions proposer toujours plus d'évènements ! 
+Tous les fonds récoltés durant les différents évènements seront utilises pour améliorer la qualité des évènements suivants, financer l’achat de matériel et faire vivre  
