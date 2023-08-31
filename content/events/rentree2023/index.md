@@ -1,7 +1,7 @@
 ---
 title: "Pre-rentré 2023: trouve la faille!"
 en_cours: true
-date: "2023-03-24"
+date: "2023-09-01"
 summary: "Pour la rentrée nous avons décidé d'organiser un évènement introductif à la cybersécurité pour les L1."
 ---
 
