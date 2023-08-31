@@ -115,6 +115,9 @@ main {
     height: auto;
     min-height: 30rem;
     border-radius: 2px;
+    text-align: left;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
 .droite {
