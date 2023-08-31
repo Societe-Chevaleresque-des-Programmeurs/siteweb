@@ -23,13 +23,13 @@
 
     <div class="nextEvents">
         {{ with .Site.GetPage "page" "/events/" }}
-            {{ $events := where .Pages "Params.en_cours" true  }}
+            {{ $events := where .Pages "Params.pinned" true  }}
 
             <h2 class="section">Prochains évènements</h2>
             {{ if $events }}
                 <div class="currentEvents">
 
-                    {{ range $events }}
+                    {{ range sort $events }}
                         <div class="event">
                             {{ $image := .Page.Resources.GetMatch "illustration.png" }}
                             {{ if $image }}
@@ -39,7 +39,7 @@
                             {{ end }}
 
                             <p class="titre">{{ .Title }}</p>
-                            <p class="when">{{ .Date.Format "01-02-2006" }}</p>
+                            <p class="when">{{ .Params.DateEvent }}</p>
                             <a class="more" href="{{ .Permalink }}">En savoir plus</a>
                         </div>
                     {{ end }}

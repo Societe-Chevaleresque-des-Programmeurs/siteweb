@@ -11,7 +11,7 @@
                 <p class="titreEvent">{{ .Title }}</p>
                 <p class="resume">{{ .Summary }} <a href="{{ .Permalink }}">...en savoir plus ?</a></p> 
                 
-                <p class="date">{{ .Date.Format "01-02-2006" }}</p>
+                <p class="date">{{ .Params.DateEvent }}</p>
 
                 {{ if .Params.En_cours }}
                 <p class="statut">En cours</p>

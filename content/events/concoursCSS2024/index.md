@@ -1,7 +1,8 @@
 ---
 title: "Concours CSS 2024"
 en_cours: true
-date: "2019-03-24"
+pinned: true
+weight: 20
 ---
 
 A venir.
