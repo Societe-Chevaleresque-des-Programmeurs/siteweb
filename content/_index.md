@@ -4,7 +4,7 @@ title: "on ne le verra pas"
 
 ### Qui sommes-nous !?
 
-La Société Chevaleresque des Programmeurs 37, ou SCP7, est une association loi 1901 créée le 13 mars 2023 par des étudiants de L2 informatique. L'association a été créée par l'impulsion de Dr Thierry BROUARD souhaitant la renaissance d'un club d'informatique au sein de au sein de l’université de Tours. 
+La Société Chevaleresque des Programmeurs 37, ou SCP7, est une association loi 1901 créée le 13 mars 2023 par des étudiants de L2 informatique. L'association s'est formée avec le soutien de Dr Thierry BROUARD qui souhaitait la renaissance d'un club d'informatique sur le campus.
 
 ### Qui peut la rejoindre ?
 
