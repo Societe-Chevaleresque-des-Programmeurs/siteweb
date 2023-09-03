@@ -1,5 +1,5 @@
 ---
-grade: "Conseillé | co-webmaster"
+grade: "Conseiller | co-webmaster"
 niveau: "L3"
 nom: "Gabriel"
 weight: 100

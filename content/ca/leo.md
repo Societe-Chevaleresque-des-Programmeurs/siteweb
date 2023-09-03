@@ -1,5 +1,5 @@
 ---
-grade: "Conseillé"
+grade: "Conseiller"
 niveau: "1ère année cycle ingénieur"
 nom: "Keziah"
 weight: 100

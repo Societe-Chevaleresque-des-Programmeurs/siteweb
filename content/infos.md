@@ -10,7 +10,7 @@ La Société Chevaleresque des Programmeurs 37, ou SCP7, est une association loi
 
 ### Qui peut la rejoindre ?
 
-Tous les étudiants sont invités, y compris ceux qui ne sont pas en informatique ! Que vous soyez en license, master ou en ecole, vous pouvez tous rejoindre l'association ! 
+Tous les étudiants sont invités, y compris ceux qui ne sont pas en informatique ! Que vous soyez en licence, master ou en école, vous pouvez tous rejoindre l'association ! 
 
 ### Quel est notre but ?
 
@@ -18,22 +18,22 @@ Nos objectifs sont multiples :
  + Contribuer au developmment d'un réseau d'anciens élèves
  + Aider les étudiants à s'intégrer au sein du groupe
  + Offrir des évènements en lien avec l'informatique
- + Permettre aux étudiants de découvrir la vie assosiative.
+ + Permettre aux étudiants de découvrir la vie associative.
 
 ### Pourquoi 5 euros ?
 
-Tous les fonds récoltés durant les différents évènements seront utilises pour améliorer la qualité des évènements suivants, financer l’achat de matériel et faire vivre  
+Tous les fonds récoltés durant les différents évènements seront utilises pour améliorer la qualité des évènements suivants, financer l’achat de matériel et faire vivre l'association 
 
 ## Comment nous contacter
 
 ### Vous pouvez nous contacter via notre adresse email : 
 
-Envoyez un message à l'adrese: **scp37a@gmail.com** !
+Envoyez un message à l'adrese: [**scp37a@gmail.com**](mailto://scp37a@gmail.com) !
 
 Nous essayerons de vous répondre dès que possible.
 
 ### Rejoinez-nous sur discord 
 
-Le plus simple est de rejoindre notre discord publique en cliquant sur le lien suivant : 
+Le plus simple est de rejoindre notre discord public en cliquant sur le lien suivant : 
 
 [https://discord.gg/xCBWqm77Sr](https://discord.gg/xCBWqm77Sr)

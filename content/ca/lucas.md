@@ -1,5 +1,5 @@
 ---
-grade: "Conseillé"
+grade: "Conseiller"
 niveau: "L3"
 nom: "Lucas"
 weight: 100

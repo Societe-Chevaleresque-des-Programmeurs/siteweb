@@ -1,8 +1,8 @@
 ---
 grade: "Membre | Chargé de communication"
 niveau: "L2"
-nom: "Adrien"
+nom: "Hadrien"
 weight: 1000
 membre_actuel: true
-description: "Trésorier de la SCP"
+description: "Chargé de commmunication"
 ---
