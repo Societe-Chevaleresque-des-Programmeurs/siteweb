@@ -10,11 +10,11 @@ weight: 1
 ### Le principe de l'évènement
 
 L'évènement de rentrée consiste en une capture de drapeau, ou *capture the flag en englais*, 
-bien évidemment nous savons que la très grande majorité des gens n'ont pas encore de très grande compétence en cybersécurité.
+bien évidemment nous savons que la très grande majorité des gens n'ont pas encore de très grandes compétence en cybersécurité.
 
 Ainsi, le jeu sera en équipe et nous serons là pour vous aider pas à pas. 
 
-A chaque faille, vous débloquerez ensemble une partie du gouté, franchement ça vaut le coup d'essayer ! 
+A chaque faille, vous débloquerez ensemble une partie du gouter, franchement ça vaut le coup d'essayer ! 
 
 
 ### Comment y participer
