@@ -8,16 +8,16 @@ La Société Chevaleresque des Programmeurs 37, ou SCP7, est une association loi
 
 ### Qui peut la rejoindre ?
 
-Tous les étudiants sont invités, y compris ceux qui ne sont pas en informatique ! Que vous soyez en licence, master ou en ecole, vous pouvez tous rejoindre l'association ! 
+Tous les étudiants sont invités, y compris ceux qui ne sont pas en informatique ! Que vous soyez en licence, master ou en école, vous pouvez tous rejoindre l'association ! 
 
 ### Quel est notre but ?
 
 Nos objectifs sont multiples :
- + Contribuer au developmment d'un réseau d'anciens élèves
- + Aider les étudiants à s'intégrer au sein du groupe
- + Offrir des évènements en lien avec l'informatique
- + Permettre aux étudiants de découvrir la vie associative.
++ Contribuer au développement d'un réseau d'anciens élèves
++ Aider les étudiants à s'intégrer au sein du groupe
++ Offrir des événements en lien avec l'informatique
++ Permettre aux étudiants de découvrir la vie associative.
 
 ### Pourquoi 5 euros ?
 
-Tous les fonds récoltés durant les différents évènements seront utilisés pour améliorer la qualité des évènements suivants, financer l’achat de matériel et faire vivre l'association 
+Tous les fonds récoltés durant les différents événements seront utilisés pour améliorer la qualité des événements suivants, financer l’achat de matériel et faire vivre l'association 
