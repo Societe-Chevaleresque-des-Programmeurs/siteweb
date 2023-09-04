@@ -30,6 +30,7 @@
                 <div class="currentEvents">
 
                     {{ range sort $events }}
+                    {{ if .Params.En_Cours }}
                         <div class="event">
                             {{ $image := .Page.Resources.GetMatch "illustration.png" }}
                             {{ if $image }}
@@ -42,6 +43,7 @@
                             <p class="when">{{ .Params.DateEvent }}</p>
                             <a class="more" href="{{ .Permalink }}">En savoir plus</a>
                         </div>
+                    {{ end }}
                     {{ end }}
 
                     <button class="avant" onclick="moveCarousel(event);"><</button>

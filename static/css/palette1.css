@@ -25,11 +25,11 @@ body {
 
 nav {
     background-color: #053442;
-    box-shadow: 0 2px 5px 0 #323031bc;
+    box-shadow: 0 2px 5px 0 #22303fbc;
 }
 
 nav:hover {
-    box-shadow: 0 5px 5px 0 #323031bc;
+    box-shadow: 0 5px 5px 0 #22303fbc;
 }
 
 nav a {
@@ -64,7 +64,11 @@ main {
     */
 
     background: #084c61;
+    /* Original flavour
     background: linear-gradient(121deg, #084c61 0%, #177e89 100%);
+    */
+
+    background: linear-gradient(121deg, rgba(6,54,69,1) 18%, rgba(18,87,95,1) 89%);
 
     /* light orange white gradient
 
@@ -146,7 +150,7 @@ main {
 .membre {
     color: #edededb8;
     background-color: #042d3846;
-    box-shadow: 0 0 10px #084C61be;
+    box-shadow: 0 0 10px #073644ce;
 }
 
 

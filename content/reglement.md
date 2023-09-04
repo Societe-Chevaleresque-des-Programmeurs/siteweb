@@ -1,3 +1,3 @@
 ---
-title: "Reglement"
+title: "Règlement"
 ---
