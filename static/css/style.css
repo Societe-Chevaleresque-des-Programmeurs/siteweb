@@ -375,7 +375,8 @@ main {
     margin: 0;
     grid-column: 1;
     grid-row: 1;
-    font-size: max(1.11vw, 0.9em);
+    font-weight: 600;
+    font-size: max(1vw, 0.8em);
 }
 
 .nom {
