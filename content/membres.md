@@ -17,7 +17,7 @@ title: " Membres notable de la SCP-37"
 | Role  | Prénom | Nom 
 | :-------------: |:-------------:| :-------------:|
 | Chargé de communication       | Hadrien       | Blanchetière-faivre       |
-| Co-webmaster                  | Adrian        | Lagasse                   |
+| Co-webmaster                  | Msiah        | Romain                   |
 | Co-webmaster                  | Gabriel       | Berthel                   |
 | Vice-Président prévention             | Adrian        | Lagasse                   |
 
