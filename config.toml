@@ -25,11 +25,13 @@ sectionPagesMenu = "toutesLesPages"
     pageRef = '/events'
     [[menu.main]]
     name = '/conseil'
-    pageRef = '/ca'
+    pageRef = '/membres'
     weight = 30
+    pageRef = '/historique'
+    weight = 40'
     [[menu.main]]
     name = '/infos'
-    weight = 40
+    weight = 50
     pageRef = '/infos'
 
     [[menu.shortcuts]]
