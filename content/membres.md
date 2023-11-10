@@ -24,7 +24,7 @@ title: " Membres notable de la SCP-37"
 ### Membres d'honeur :
 | Prénom  | Nom | Information 
 | :-------------: |:-------------:| :-------------:|
-| Harmonie        |               | Création du logo        |
+| Harmonie        | Guérin          | Création du logo        |
 | Thierry         | Brouard        | Maître de conférence    |
 
 
