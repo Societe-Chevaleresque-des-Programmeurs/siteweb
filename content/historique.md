@@ -1,11 +1,4 @@
 ---
-title: "Charte de bonne conduite"
+title: "Historique de l'association"
 ---
 
-Membres du CA 
-
-|   	|   	|   	|   	|   	|
-|---	|---	|---	|---	|---	|
-|   	|   	|   	|   	|   	|
-|   	|   	|   	|   	|   	|
-|   	|   	|   	|   	|   	|
