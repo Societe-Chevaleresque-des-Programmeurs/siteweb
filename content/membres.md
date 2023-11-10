@@ -2,16 +2,16 @@
 title: " Membres notable de la SCP-37"
 ---
 
-### Membres du bureau :
+### Membres du conseil d'administration :
 | Role  | Prénom | Nom 
 | :-------------: |:-------------:| :-------------:|
 | Président       | Andreas       | Mulard        |
 | Secrétaire      | Romain        | Brouard       |
 | Trésorier       | Romain        | Msiah         |
-| Bureau          | Adrian        | Lagasse       |
-| Bureau          | Gabriel       | Berthel       |
-| Bureau          | Lucas         | Bienfait      |
-| Bureau          | Léo           | Remy          |
+| CA              | Adrian        | Lagasse       |
+| CA          | Gabriel       | Berthel       |
+| CA          | Lucas         | Bienfait      |
+| CA          | Léo           | Remy          |
 
 ### Roles actifs
 | Role  | Prénom | Nom 
@@ -19,12 +19,12 @@ title: " Membres notable de la SCP-37"
 | Chargé de communication       | Hadrien       | Blanchetière-faivre       |
 | Co-webmaster                  | Adrian        | Lagasse                   |
 | Co-webmaster                  | Gabriel       | Berthel                   |
-| Chargé prévention             | Adrian        | Lagasse                   |
+| Vice-Président prévention             | Adrian        | Lagasse                   |
 
 ### Membres d'honeur :
 | Prénom  | Nom | Information 
 | :-------------: |:-------------:| :-------------:|
 | Harmonie        |               | Création du logo        |
-| Thierry         | Brouar        | Maître de conférence    |
+| Thierry         | Brouard        | Maître de conférence    |
 
 
