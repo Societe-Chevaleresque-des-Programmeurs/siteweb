@@ -28,7 +28,7 @@ sectionPagesMenu = "toutesLesPages"
     pageRef = '/membres'
     weight = 30
     pageRef = '/historique'
-    weight = 40'
+    weight = 40
     [[menu.main]]
     name = '/infos'
     weight = 50
